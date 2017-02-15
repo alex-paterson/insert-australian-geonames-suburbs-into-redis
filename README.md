@@ -12,4 +12,4 @@ This script inserts a list of Australian suburbs from GeoNames into a Redis set.
 
 # Confirmation
 
-Get list `SMEMBERS aus_suburbs`.
+Get set `SMEMBERS aus_suburbs`.
