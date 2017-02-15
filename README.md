@@ -1,6 +1,6 @@
 # Insert Australian GeoNames Suburbs Into Redis
 
-This script inserts a list of Australian suburbs from GeoNames into a Redis database.
+This script inserts a list of Australian suburbs from GeoNames into a Redis set.
 
 # How To
 
@@ -12,4 +12,4 @@ This script inserts a list of Australian suburbs from GeoNames into a Redis data
 
 # Confirmation
 
-Get list `LRANGE aus_suburbs 0 -1`.
+Get list `SMEMBERS aus_suburbs`.

@@ -31,7 +31,7 @@ fs.readFile(file, 'ascii', (err, data) => {
     });
     var array = [];
     suburbs.forEach(suburb => array.push(suburb));
-    client.rpush(key, array, err => {
+    client.sadd(key, array, err => {
       if (err) throw err;
       console.log('Success!');
       client.quit();
